@@ -2,14 +2,95 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cryptex</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+
+<img id= 'background' src="C:\Users\DELL\Desktop\Laboratoria\Imagenes Cryptex\fondo.jpg" alt="">
+
+<!--Pantalla 1 -->
+
+<div id="screen1">
+
+      <h1> Cryptex </h1>
+      <p>Cryptex fue creado para los fans de los mensajes encriptados <br>
+          con él podremos cifrar y descifrar los mensajes que deseemos <br>
+          usando el desplazamiento de letras dentro del alfabeto. </p>
+
+          <button class="boton" onclick="controlScreens('screen1','screen2a')">Cifrar</button>
+          <button class="boton" onclick="controlScreens('screen1','screen2b')">Descifrar</button>
+
+</div>
+
+
+    <!--<div>
+      <button class="boton" onclick="cipher.encode(offset, string)">Cifrar</button>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+    <div>
+      <button class="boton" onclick="cipher.decode(offset, string)">Descifrar</button>
+    </div>
+</div>
+<!-------------------------------------------------------------------------------->
+<!--Pantalla 2A -->
+
+<div id="screen2a">
+
+         <label for="offsetC">Cifrar a:</label>
+         <input type="text" id="offsetC" />
+
+    <p>¡Hola!, recuerda poner el número en el que se cifrará tu mensaje.<br></p>
+       <label for="messageC">Mensaje a cifrar:</label>
+       <input type="text" id="messageC" />
+
+   <p>Nota: Tu mensaje debe ser escrito en mayúsculas <br>
+       no se aceptan signos de puntuación, números ni la letra "ñ".<br></p>
+
+         <button class="boton" onclick="controlScreens('screen2a','screen3a')">Cifrar</button>
+
+</div>
+<!----------------------------------------------------------------------------------->
+<!--Pantalla 2B -->
+
+<div id="screen2b">
+
+     <label for="offsetD">Descifrar a:</label>
+     <input type="text" id="offsetD" />
+
+<p>¡Hola!, recuerda poner el número en el que se descifrará tu mensaje.<br></p>
+
+   <label for="messageD">Mensaje a descifrar:</label>
+   <input type="text" id="messageD" />
+
+     <button class="boton" onclick="controlScreens('screen2b','screen3b')">Descifrar</button>
+
+
+</div>
+
+<!------------------------------------------------------------------------------------>
+<!--Pantalla 3A -->
+
+<div id="screen3a">
+
+
+    <button class="boton" onclick="controlScreens('screen3a','screen1')">Volver</button>
+
+
+</div>
+<!------------------------------------------------------------------------------------>
+<!--Pantalla 3B -->
+
+<div id="screen3b">
+
+  <button class="boton" onclick="controlScreens('screen3b','screen1')">Volver</button>
+
+</div>
+
+
+
+
+
+<script src="cipher.js"></script>
+<script src="index.js"></script>
+</body>
 </html>
