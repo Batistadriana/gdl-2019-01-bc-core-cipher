@@ -18,19 +18,14 @@
           con él podremos cifrar y descifrar los mensajes que deseemos <br>
           usando el desplazamiento de letras dentro del alfabeto. </p>
 
+         <div id=botonesInicio>
+
           <button class="boton" onclick="controlScreens('screen1','screen2a')">Cifrar</button>
           <button class="boton" onclick="controlScreens('screen1','screen2b')">Descifrar</button>
 
+         </div>
 </div>
 
-
-    <!--<div>
-      <button class="boton" onclick="cipher.encode(offset, string)">Cifrar</button>
-    </div>
-    <div>
-      <button class="boton" onclick="cipher.decode(offset, string)">Descifrar</button>
-    </div>
-</div>
 <!-------------------------------------------------------------------------------->
 <!--Pantalla 2A -->
 
@@ -39,14 +34,16 @@
          <label for="offsetC">Cifrar a:</label>
          <input type="text" id="offsetC" />
 
-    <p>¡Hola!, recuerda poner el número en el que se cifrará tu mensaje.<br></p>
+     <p>¡Hola!, recuerda poner el número en el que se cifrará tu mensaje.<br></p>
        <label for="messageC">Mensaje a cifrar:</label>
        <input type="text" id="messageC" />
 
-   <p>Nota: Tu mensaje debe ser escrito en mayúsculas <br>
+     <p>Nota: Tu mensaje debe ser escrito en mayúsculas <br>
        no se aceptan signos de puntuación, números ni la letra "ñ".<br></p>
 
-         <button class="boton" onclick="controlScreens('screen2a','screen3a')">Cifrar</button>
+   <div id=botonCifrar>
+      <button class="boton" onclick="controlScreens('screen2a','screen3a')">Cifrar</button>
+   </div>
 
 </div>
 <!----------------------------------------------------------------------------------->
@@ -62,8 +59,9 @@
    <label for="messageD">Mensaje a descifrar:</label>
    <input type="text" id="messageD" />
 
+  <div id=botonDescifrar>
      <button class="boton" onclick="controlScreens('screen2b','screen3b')">Descifrar</button>
-
+  </div>
 
 </div>
 

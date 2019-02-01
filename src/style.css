@@ -1,3 +1,4 @@
+/* fondo de pantalla */
 #background{
   z-index: -1;
   position: absolute;
@@ -5,29 +6,125 @@
   top: 0px;
   width: 100%;
   height: 100%;
-
 }
 
-body{
+/*body{
 text-align: center;
 }
-
+*/
+/* pantalla 1*/
 #screen1{
+
+  padding-top: 170px;
+  padding-left: 425px;
+  text-align: left;
   margin: auto;
-left: 50%;
-top: 50%;
-position: relative;
+  position: relative;
+}
+
+#botonesInicio{
+
+  padding-left: 150px;
+}
+/* pantalla 2A*/
+
+#screen2a{
+
+  padding-top: 170px;
+  padding-left: 425px;
+  text-align: left;
+  margin: auto;
+  position: relative;
+}
+
+#botonCifrar{
+    padding-left: 200px;
+}
 
 
+#offsetC{
 
+  width: 20px;
+  height: 17px;
 }
 
 #messageC{
+
+  left: ;
   width: 350px;
   height: 55px;
 }
 
+/* pantalla 2B */
+
+#screen2b{
+
+  padding-top: 170px;
+  padding-left: 425px;
+  text-align: left;
+  margin: auto;
+  position: relative;
+}
+
+#botonDescifrar{
+    padding-left: 200px;
+}
+
+
+#offsetD{
+
+  width: 20px;
+  height: 17px;
+}
+
+#messageD{
+
+  width: 350px;
+  height: 55px;
+}
+
+/* pantalla 3A*/
+
+#screen3a{
+
+  padding-top: 170px;
+  padding-left: 425px;
+  text-align: left;
+  margin: auto;
+  position: relative;
+}
+
+/* pantalla 3B*/
+
+#screen3b{
+
+  padding-top: 170px;
+  padding-left: 425px;
+  text-align: left;
+  margin: auto;
+  position: relative;
+}
+
+/* Botones, labels, p*/
+
+button{
+
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #804000;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+p{
+
+ font-size: 20px;
+ font-weight: bold;
+}
+
 label{
   font-size: 20px;
-
 }
