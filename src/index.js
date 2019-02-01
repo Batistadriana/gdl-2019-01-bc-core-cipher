@@ -1,4 +1,4 @@
-//Funcion para "cambiar" de ventanas
+//Funcion para prender y apagar de ventanas
 function restart(){
 
   document.getElementById("screen2a").style.display = 'none';
@@ -12,7 +12,7 @@ function controlScreens(divX, divY){
  let divElement = document.getElementById(divX);
  let divElement2 = document.getElementById(divY);
 
- //Ocultando la division del inicio
+ // apagar pantalla 1
  if(divElement.style.display == 'none'){
    divElement.style.display = 'block';
  }
@@ -20,7 +20,7 @@ function controlScreens(divX, divY){
    divElement.style.display = 'none';
  }
 
- //Mostrando la division del menu
+ // prender pantallas
  if(divElement2.style.display == 'none'){
    divElement2.style.display = 'block';
  }
