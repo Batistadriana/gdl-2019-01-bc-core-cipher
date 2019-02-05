@@ -1,3 +1,6 @@
+
+
+
 //Funcion para prender y apagar de ventanas
 function restart(){
 
