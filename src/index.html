@@ -42,7 +42,7 @@
        no se aceptan signos de puntuación, números ni la letra "ñ".<br></p>
 
    <div id=botonCifrar>
-      <button id="encode" class="boton" onclick="controlScreens('screen2a','screen3a')">Cifrar</button>
+      <button id="encode" class="boton">Cifrar</button>
    </div>
 
 </div>
@@ -60,7 +60,7 @@
    <input type="text" id="messageD" />
 
   <div id=botonDescifrar>
-     <button id="decode" class="boton" onclick="controlScreens('screen2b','screen3b')">Descifrar</button>
+     <button id="decode" class="boton">Descifrar</button>
   </div>
 
 </div>
@@ -70,6 +70,7 @@
 
 <div id="screen3a">
 
+    <textarea id="outputE" name="name" rows="8" cols="80"></textarea>
 
     <button class="boton" onclick="controlScreens('screen3a','screen1')">Volver</button>
 
@@ -80,7 +81,9 @@
 
 <div id="screen3b">
 
-  <button class="boton" onclick="controlScreens('screen3b','screen1')">Volver</button>
+   <textarea id="outputD" name="name" rows="8" cols="80"></textarea>
+
+   <button class="boton" onclick="controlScreens('screen3b','screen1')">Volver</button>
 
 </div>
 
