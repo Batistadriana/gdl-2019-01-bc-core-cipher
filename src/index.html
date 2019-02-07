@@ -7,23 +7,30 @@
   </head>
   <body>
 
-<!--<img id="background" src="C:\Users\DELL\Desktop\Laboratoria\Imagenes Cryptex\fondo.jpg" alt=""> -->
+<img id="background" src="C:\Users\DELL\Desktop\Laboratoria\Imagenes Cryptex\fondo.jpg" alt="">
 
 <!--Pantalla 1 -->
 
 <div id="screen1">
 
-      <h1> Cryptex </h1>
-      <p>Cryptex fue creado para los fans de los mensajes encriptados <br>
-          con él podremos cifrar y descifrar los mensajes que deseemos <br>
-          usando el desplazamiento de letras dentro del alfabeto. </p>
+  <img id="cryptex" src="C:\Users\DELL\Desktop\Laboratoria\Imagenes Cryptex\cryptexAdri.png" alt="">
+
+    <div id="texto">
+
+      <p>¿Eres fan de los mensajes encriptados? <br>
+          puedes usar Cryptex para cifrarlos y mantenerlos en secreto, <br>
+          escoge un código numérico, escribe tu mensaje y compártelo  <br>
+          con quien quieras para que después, descifre tu mensaje.</p>
 
          <div id="botonesInicio">
 
-           <button id="botonEncode">Cifrar</button>
-           <button id="botonDecode">Descifrar</button>
+           <button id="botonEncode">CIFRAR</button>
+           <button id="botonDecode">DESCIFRAR</button>
 
          </div>
+
+    </div>
+
 </div>
 
 <!-------------------------------------------------------------------------------->
@@ -31,49 +38,64 @@
 
 <div id="screen2a" hidden> <!--hidden -->
 
-      <label for="offsetC">Cifrar a:</label>
+      <label for="offsetC">Código numérico:</label>
       <input type="text" id="offsetC" />
 
-      <p>¡Hola!, recuerda poner el número en el que se cifrará tu mensaje.<br></p>
+      <p class="instrucciones">Nota: Tu mensaje debe ser escrito en mayúsculas <br>
+       sin signos de puntuación, números, ni la letra "ñ".<br></p>
+
       <label for="messageC">Mensaje a cifrar:</label>
+
+    <div id="mnsgC">
+
       <input type="text" id="messageC" />
 
-      <p>Nota: Tu mensaje debe ser escrito en mayúsculas <br>
-       no se aceptan signos de puntuación, números ni la letra "ñ".<br></p>
+    </div>
 
     <div id="botonCifrar">
 
-       <button id="encode" class="boton">Cifrar</button>
+       <button id="encode" class="boton">CIFRAR</button>
 
     </div>
 
        <textarea id="outputE" name="name" rows="8" cols="80"></textarea>
 
-       <button class="boton" id="volverA" >Volver</button>
+     <div class="botonVolver">
+       <button class="boton" id="volverA">VOLVER</button>
+       <button class="boton" id="limpiarA">LIMPIAR</button>
+     </div>
 
 </div>
 <!----------------------------------------------------------------------------------->
 <!--Pantalla 2B -->
 
-<div id="screen2b" hidden> <!--hidden -->
+<div id="screen2b" hidden>
 
-       <label for="offsetD">Descifrar a:</label>
+       <label for="offsetD">Código numérico:</label>
        <input type="text" id="offsetD" />
 
-       <p>¡Hola!, recuerda poner el número en el que se descifrará tu mensaje.<br></p>
+       <p class="instrucciones">¡Hola!, recuerda poner el código numérico en el que fue cifrado tu mensaje.<br></p>
 
        <label for="messageD">Mensaje a descifrar:</label>
-       <input type="text" id="messageD" />
+
+   <div id="mnsgD">
+
+       <input type="text" id="messageD"/>
+
+   </div>
 
    <div id="botonDescifrar">
 
-       <button id="decode" class="boton">Descifrar</button>
+       <button id="decode" class="boton">DESCIFRAR</button>
 
    </div>
 
        <textarea id="outputD" name="name" rows="8" cols="80"></textarea>
 
-       <button class="boton" id="volverB">Volver</button>
+   <div class="botonVolver">
+       <button class="boton" id="volverB">VOLVER</button>
+       <button class="boton" id="limpiarB">LIMPIAR</button>
+   </div>
 
 </div>
 
