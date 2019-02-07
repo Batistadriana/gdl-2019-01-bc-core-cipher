@@ -7,7 +7,7 @@
   </head>
   <body>
 
-<img id= 'background' src="C:\Users\DELL\Desktop\Laboratoria\Imagenes Cryptex\fondo.jpg" alt="">
+<!--<img id="background" src="C:\Users\DELL\Desktop\Laboratoria\Imagenes Cryptex\fondo.jpg" alt=""> -->
 
 <!--Pantalla 1 -->
 
@@ -18,10 +18,10 @@
           con él podremos cifrar y descifrar los mensajes que deseemos <br>
           usando el desplazamiento de letras dentro del alfabeto. </p>
 
-         <div id=botonesInicio>
+         <div id="botonesInicio">
 
-          <button class="boton" onclick="controlScreens('screen1','screen2a')">Cifrar</button>
-          <button class="boton" onclick="controlScreens('screen1','screen2b')">Descifrar</button>
+           <button id="botonEncode">Cifrar</button>
+           <button id="botonDecode">Descifrar</button>
 
          </div>
 </div>
@@ -29,64 +29,53 @@
 <!-------------------------------------------------------------------------------->
 <!--Pantalla 2A -->
 
-<div id="screen2a">
+<div id="screen2a" hidden> <!--hidden -->
 
-         <label for="offsetC">Cifrar a:</label>
-         <input type="text" id="offsetC" />
+      <label for="offsetC">Cifrar a:</label>
+      <input type="text" id="offsetC" />
 
-     <p>¡Hola!, recuerda poner el número en el que se cifrará tu mensaje.<br></p>
-       <label for="messageC">Mensaje a cifrar:</label>
-       <input type="text" id="messageC" />
+      <p>¡Hola!, recuerda poner el número en el que se cifrará tu mensaje.<br></p>
+      <label for="messageC">Mensaje a cifrar:</label>
+      <input type="text" id="messageC" />
 
-     <p>Nota: Tu mensaje debe ser escrito en mayúsculas <br>
+      <p>Nota: Tu mensaje debe ser escrito en mayúsculas <br>
        no se aceptan signos de puntuación, números ni la letra "ñ".<br></p>
 
-   <div id=botonCifrar>
-      <button id="encode" class="boton">Cifrar</button>
-   </div>
+    <div id="botonCifrar">
+
+       <button id="encode" class="boton">Cifrar</button>
+
+    </div>
+
+       <textarea id="outputE" name="name" rows="8" cols="80"></textarea>
+
+       <button class="boton" id="volverA" >Volver</button>
 
 </div>
 <!----------------------------------------------------------------------------------->
 <!--Pantalla 2B -->
 
-<div id="screen2b">
+<div id="screen2b" hidden> <!--hidden -->
 
-     <label for="offsetD">Descifrar a:</label>
-     <input type="text" id="offsetD" />
+       <label for="offsetD">Descifrar a:</label>
+       <input type="text" id="offsetD" />
 
-<p>¡Hola!, recuerda poner el número en el que se descifrará tu mensaje.<br></p>
+       <p>¡Hola!, recuerda poner el número en el que se descifrará tu mensaje.<br></p>
 
-   <label for="messageD">Mensaje a descifrar:</label>
-   <input type="text" id="messageD" />
+       <label for="messageD">Mensaje a descifrar:</label>
+       <input type="text" id="messageD" />
 
-  <div id=botonDescifrar>
-     <button id="decode" class="boton">Descifrar</button>
-  </div>
+   <div id="botonDescifrar">
 
-</div>
+       <button id="decode" class="boton">Descifrar</button>
 
-<!------------------------------------------------------------------------------------>
-<!--Pantalla 3A -->
+   </div>
 
-<div id="screen3a">
+       <textarea id="outputD" name="name" rows="8" cols="80"></textarea>
 
-    <textarea id="outputE" name="name" rows="8" cols="80"></textarea>
-
-    <button class="boton" onclick="controlScreens('screen3a','screen1')">Volver</button>
-
+       <button class="boton" id="volverB">Volver</button>
 
 </div>
-<!------------------------------------------------------------------------------------>
-<!--Pantalla 3B -->
-
-<div id="screen3b">
-
-   <textarea id="outputD" name="name" rows="8" cols="80"></textarea>
-
-   <button class="boton" onclick="controlScreens('screen3b','screen1')">Volver</button>
-
-</div>
-
 
 
 
